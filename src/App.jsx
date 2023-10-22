@@ -1,9 +1,9 @@
-import './App.css'
+import style from'./App.module.css'
 import ToDoList from './ToDoList/index.jsx'
 const App = () => {
   return (
     <>
-      <p className='title'>TODO List</p>
+      <p className={style['title']}>TODO List</p>
       <ToDoList />
     </>
   )

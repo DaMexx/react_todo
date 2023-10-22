@@ -1,18 +1,18 @@
-import './ToDo.css'
+import style from  './ToDo.module.css'
 import TrashCanIcon from '../../icons/TrashCanIcon'
 // eslint-disable-next-line react/prop-types
-const ToDo = ({ checked, text }) => {
-
+const ToDo = ({ checked, text, deleteToDo, checkToDo }) => {
   return (
-    <li className="todo__container">
+    <li className={style['todo__container']}>
       <input
         type="checkbox"
-        defaultChecked={checked}
+        checked={checked}
+        onChange={checkToDo}
       />
-      <span 
-        className="todo__content "
-      >{text}</span>
-      <button>
+      <span className={style['todo__content']}>
+        {text}
+      </span>
+      <button onClick={deleteToDo}>
         <TrashCanIcon />
       </button>
     </li>
