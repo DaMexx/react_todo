@@ -1,0 +1,13 @@
+.todo-list__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list__input {
+  width: 100%;
+}
+
+.todo-list__input-container {
+  display: flex;
+  gap: 10px;
+}
