@@ -11,3 +11,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.todo__content--disable {
+  background-color: bisque;
+}

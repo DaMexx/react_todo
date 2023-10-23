@@ -9,7 +9,11 @@ const ToDo = ({ checked, text, deleteToDo, checkToDo }) => {
         checked={checked}
         onChange={checkToDo}
       />
-      <span className={style['todo__content']}>
+      <span className={
+        checked
+        ? `${style['todo__content']} ${style['todo__content--disable']}` 
+        : style['todo__content']
+      }>
         {text}
       </span>
       <button onClick={deleteToDo}>
